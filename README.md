@@ -13,6 +13,7 @@ Technologies used:
 * Swift
 * Core Data
 * Firebase API
+* GoogleAuth API
 * URLSession
 * Kingfisher
 * MVVM-C architecture
