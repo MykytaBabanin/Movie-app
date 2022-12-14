@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieViewController" customModule="The_social_network_app" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="Noo-AR-wna" id="XtD-Vk-JZf"/>
+                <outlet property="collectionView" destination="njI-UX-YSP" id="VNE-jv-UVr"/>
+                <outlet property="view" destination="iN0-l3-epB" id="l8k-3d-bbD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Noo-AR-wna">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="560"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0iC-dD-yJ3">
+                    <rect key="frame" x="55" y="64" width="287" height="32"/>
+                    <segments>
+                        <segment title="Now showing"/>
+                        <segment title="Coming Soon"/>
+                    </segments>
+                </segmentedControl>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="njI-UX-YSP">
+                    <rect key="frame" x="0.0" y="105" width="400" height="685"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iud-a0-7yb">
+                        <size key="itemSize" width="300" height="500"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="50" height="50"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="njI-UX-YSP" secondAttribute="bottom" constant="20" id="3Mh-0j-lVd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Noo-AR-wna" secondAttribute="bottom" constant="250" id="8lV-S6-ZQ6"/>
+                <constraint firstItem="Noo-AR-wna" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="DOn-WJ-lu5"/>
+                <constraint firstItem="Noo-AR-wna" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HYe-FN-60y"/>
+                <constraint firstItem="Noo-AR-wna" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="MYc-Nx-5ph"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0iC-dD-yJ3" secondAttribute="trailing" constant="48" id="PdW-o3-sTI"/>
+                <constraint firstItem="0iC-dD-yJ3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="RS3-Qz-njN"/>
+                <constraint firstItem="njI-UX-YSP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="T0a-Ao-SIU"/>
+                <constraint firstItem="njI-UX-YSP" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="10" id="ZQv-gm-7rE"/>
+                <constraint firstItem="0iC-dD-yJ3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="55" id="kWn-yX-ra1"/>
+                <constraint firstItem="njI-UX-YSP" firstAttribute="top" secondItem="0iC-dD-yJ3" secondAttribute="bottom" constant="10" id="q12-ce-HYc"/>
+            </constraints>
+            <point key="canvasLocation" x="130.76923076923077" y="-11.374407582938389"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
