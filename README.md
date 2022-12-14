@@ -17,6 +17,3 @@ Technologies used:
 * Kingfisher
 * MVVM-C architecture
 * AutoLayout
-
-<img width="319" alt="image" src="https://user-images.githubusercontent.com/90902029/207602918-43385ab6-d948-46a4-8eda-5120f9e3d5d2.png">
-<img width="310" alt="image" src="https://user-images.githubusercontent.com/90902029/207602948-04219e4c-5efd-49ca-ac1d-ecb17245feca.png">
