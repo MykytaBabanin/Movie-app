@@ -17,3 +17,5 @@ Technologies used:
 * Kingfisher
 * MVVM-C architecture
 * AutoLayout
+
+This project is in progress, so you can overview pull requests!
